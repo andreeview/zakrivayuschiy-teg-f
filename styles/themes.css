@@ -4,3 +4,39 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+    --regular-font-weight: 400;
+    --title-font-weight: 700;
+
+    --background-color: #ffffff;
+    --main-color: #000000;
+    --button-text-color: var(--background-color);
+
+    --background-pattern: repeating-linear-gradient(#d3d3d3 0 2px, #d3d3d300 2px 4px), repeating-linear-gradient(90deg, #d3d3d3 0 2px, #d3d3d300 2px 4px), linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
+}
+
+:root.theme-dark {
+    --regular-font-weight: 465;
+    --title-font-weight: 785;
+
+    --background-color: #000000;
+    --main-color: #00CC14;
+    --button-text-color: var(--main-color);
+
+    --background-pattern: repeating-linear-gradient(#000000 0 2px, #00000000 2px 4px), repeating-linear-gradient(90deg, #000000 0 2px, #00000000 2px 4px), linear-gradient(#007F0C 0%, #004306 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  
+    :root {
+        --regular-font-weight: 465;
+        --title-font-weight: 785;
+    
+        --background-color: #000000;
+        --main-color: #00CC14;
+        --button-text-color: var(--main-color);
+
+        --background-pattern: repeating-linear-gradient(#000000 0 2px, #00000000 2px 4px), repeating-linear-gradient(90deg, #000000 0 2px, #00000000 2px 4px), linear-gradient(#007F0C 0%, #004306 100%);
+    }
+}
