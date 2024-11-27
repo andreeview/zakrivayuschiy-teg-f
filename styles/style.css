@@ -239,15 +239,12 @@ main {
 
 .card__description-text {
   inline-size: 100%;
+  line-height: 21px;
 }
 
 .card__actions {
   display: flex;
   gap: 5px;
-}
-
-.card__description-text {
-  line-height: 21px;
 }
 
 .card__description-text:not(:last-of-type) {
