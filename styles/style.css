@@ -222,7 +222,7 @@ main {
   mix-blend-mode: hard-light;
 }
 
-@supports ((-webkit-text-stroke: 1px var(--background-color))) {
+@supports (-webkit-text-stroke: 1px var(--background-color)) {
   .card__image-tag {
     -webkit-text-stroke: 1px var(--background-color);
     text-shadow: none;
@@ -246,7 +246,7 @@ main {
   gap: 5px;
 }
 
-.card__description-text:not(:last-of-type) {
+.card__description-text {
   line-height: 21px;
 }
 
